@@ -14,14 +14,14 @@
         </div>
 
         <div>
-            <form class="form" id="thermSelectForm">
+            <form class="mainForm" id="thermSelectForm">
                 <table>
                     <tr>
                         <td>
-                            <input type="number" id="thermInput" placeholder="value"></input>
+                            <input type="number" step="any" id="thermInput" class="thermDisplay" placeholder="Input value" required></input>
                             <p>
-                                <select name=selectThermInput id="selectInputType" required>
-                                    <option disabled selected>What therm input?</option>
+                                <select name=selectThermInput id="selectInput" class="selectType" required>
+
                                     <option value="celsius">Celsius</option>
                                     <option value="fahrenheit">Fahrenheit</option>
                                     <option value="kelvin">Kelvin</option>
@@ -29,10 +29,10 @@
                             </p>
                         </td>
                         <td>
-                            <input type="number" id="thermInput" placeholder="value"></input>
+                            <input id="thermOutput" class="thermDisplay" placeholder="Output value" disabled></input>
                             <p>
-                                <select name=selectThermOutput id="selectInputType" required>
-                                    <option disabled selected>What therm output?</option>
+                                <select name=selectThermOutput id="selectOutput" class="selectType" onchange="convert()" required>
+
                                     <option value="celsius">Celsius</option>
                                     <option value="fahrenheit">Fahrenheit</option>
                                     <option value="kelvin">Kelvin</option>
@@ -41,10 +41,10 @@
                         </td>
                     </tr>
                 </table>
-                <button type="submit" id="btnSubmit">Calculate</button>
             </form>
             
         </div>
     </div>
-</body>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body> 
 </html>

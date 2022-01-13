@@ -17,9 +17,9 @@ body {
 
 #mainContainer {
     color: var(--tertiary-color);
-    height: 400px;
+    height: 335px;
     width: 400px;
-    margin: 100px auto;
+    margin: 10% auto;
     background: var(--quinary-color);
     box-shadow: 5px 5px 5px var(--quinary-color);
     border: solid var(--primary-color);
@@ -49,14 +49,18 @@ td {
     border: 3px solid var(--quartenary-color);
 }
 
-#thermInput {
+.thermDisplay {
+    color: var(--tertiary-color);
+    background: var(--quartenary-color);
+    font-size: 20px;
+    text-align: center;
     height: 50px;
     width: 132px;
 }
 
-#selectInputType {
-    height: 50px;
-    width: 140px;
+.thermDisplay:hover {
+    color:var(--quinary-color);
+    background: var(--primary-color);
 }
 
 #thermSelectForm {
@@ -65,22 +69,22 @@ td {
     padding-right: 20px;
 }
 
-#btnSubmit {
+.selectType {
     color: var(--primary-color);
     background: var(--quartenary-color);
     display: block;
     margin: 30px auto;
     font-weight: bold;
-    width: 200px;
+    font-size:20px;
     height: 50px;
-    font-size: 17px;
+    width: 140px;
     text-transform: uppercase;
     border: solid var(--primary-color);
     border-width: 2px 2px 2px 2px ;
     border-radius: 20px;
 }
 
-#btnSubmit:hover {
+.selectType:hover {
     color:var(--quinary-color);
     background: var(--primary-color);
 }
