@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --primary-color: #66F6F1;
+    --secondary-color: #45A29E;
+    --tertiary-color: #C5C6C7;
+    --quartenary-color: #1F2833;
+    --quinary-color: #0B0C10;
+}
+
+body {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+
+#mainContainer {
+    color: var(--tertiary-color);
+    height: 400px;
+    width: 400px;
+    margin: 100px auto;
+    background: var(--quinary-color);
+    box-shadow: 5px 5px 5px var(--quinary-color);
+    border: solid var(--primary-color);
+    border-width: 2px 2px 2px 2px ;
+    border-radius: 10px;
+}
+
+#title {
+    background: var(--quartenary-color);
+    color: var(--primary-color);
+    padding: 1px;
+    font-size: 15px;
+    font-weight: normal;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+table {
+    margin: 30px auto;
+}
+
+td {
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid var(--quartenary-color);
+}
+
+#thermInput {
+    height: 50px;
+    width: 132px;
+}
+
+#selectInputType {
+    height: 50px;
+    width: 140px;
+}
+
+#thermSelectForm {
+    margin: 10px 10px 10px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#btnSubmit {
+    color: var(--primary-color);
+    background: var(--quartenary-color);
+    display: block;
+    margin: 30px auto;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: solid var(--primary-color);
+    border-width: 2px 2px 2px 2px ;
+    border-radius: 20px;
+}
+
+#btnSubmit:hover {
+    color:var(--quinary-color);
+    background: var(--primary-color);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Thermal Conversor</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="title">
+            <h1>Thermal Conversor</h1>
+        </div>
+
+        <div>
+            <form class="form" id="thermSelectForm">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="number" id="thermInput" placeholder="value"></input>
+                            <p>
+                                <select name=selectThermInput id="selectInputType" required>
+                                    <option disabled selected>What therm input?</option>
+                                    <option value="celsius">Celsius</option>
+                                    <option value="fahrenheit">Fahrenheit</option>
+                                    <option value="kelvin">Kelvin</option>
+                                </select>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="number" id="thermInput" placeholder="value"></input>
+                            <p>
+                                <select name=selectThermOutput id="selectInputType" required>
+                                    <option disabled selected>What therm output?</option>
+                                    <option value="celsius">Celsius</option>
+                                    <option value="fahrenheit">Fahrenheit</option>
+                                    <option value="kelvin">Kelvin</option>
+                                </select>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="btnSubmit">Calculate</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
