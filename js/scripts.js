@@ -1,15 +1,25 @@
-function convert(event) {
-    // event.preventDefault();
+function convert() {
 
     // Variables input and output
-    let input = parseFloat(document.getElementById("thermInput").value);
+    let input = document.getElementById("thermInput").value;
     let output;
     let thermalScale = "";
     let selectInput = document.getElementById("selectInput").value;
     let selectOutput = document.getElementById("selectOutput").value;
-    
+
+    // Checking if field input is empty
+    if(input == '') {
+        alert("please fill in the input field");
+        return;
+    }
+    input = parseFloat(input);
     switch(selectInput) {
         case "celsius":
+            if(input < -273.15) {
+                alert("Is not allowed select Fahrenheit less than -273.15ºC");
+                return;
+            }
+
             switch(selectOutput) {
 
                 // C >> F
@@ -26,11 +36,16 @@ function convert(event) {
 
                 // C >> C
                 default:
-                    output = 0;
+                    output = '';
                     alert("looks like you're trying to troll me");
             }
             break;
         case "fahrenheit":
+            if(input < -459.67) {
+                alert("Is not allowed select Fahrenheit less than -459.67ºF");
+                return;
+            }
+
             switch(selectOutput) {
 
                 // F >> C
@@ -47,13 +62,17 @@ function convert(event) {
 
                 // F >> F
                 default:
-                    output = 0;
+                    output = '';
                     alert("looks like you're trying to troll me");
             }
             break;
         case "kelvin":
-            switch(selectOutput) {
+            if(input < 0) {
+                alert("Is not allowed select Kelvin negative");
+                return;
+            }
 
+            switch(selectOutput) {
                 // K >> C
                 case "celsius":
                     output = input - 273.15;
@@ -68,9 +87,8 @@ function convert(event) {
 
                 // K >> K
                 default:
-                    output = 0;
+                    output = '';
                     alert("looks like you're trying to troll me");
-                    thermalScale = "K";
             }
             break;
     }
