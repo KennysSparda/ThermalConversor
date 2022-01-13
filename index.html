@@ -20,7 +20,7 @@
                         <td>
                             <input type="number" step="any" id="thermInput" class="thermDisplay" placeholder="Input value" required></input>
                             <p>
-                                <select name=selectThermInput id="selectInput" class="selectType" required>
+                                <select name=selectThermInput id="selectInput" class="selectType" onchange="convert()" required>
 
                                     <option value="celsius">Celsius</option>
                                     <option value="fahrenheit">Fahrenheit</option>
